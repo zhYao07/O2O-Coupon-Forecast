@@ -5,12 +5,14 @@
 
 ## 文件目录结构
 ```bash
-.
-├── Fusion/                         # 三种模型融合相关代码与结果
+├── Fusion/                         # 三种模型融合相关代码与结果（最高rank融合。auc：0.8056）
+│   ├── fusion_model/               # 模型融合脚本与实现
+│   ├── model/                      # 各单模型的训练
+│   └── model_result/               # 各单模型预测结果
 │
-├── O2O_dataset/                    # 存放原始或处理后的O2O数据集
+├── O2O_dataset/                    # 存放原始O2O数据集
 │
-├── dataset/                        # 数据集生成或划分脚本及中间文件
+├── dataset/                        # 提取特征后生成的数据集
 │
 ├── extract_history_feature.py      # 提取历史行为特征
 ├── extract_label_feature.py        # 提取标签相关特征
